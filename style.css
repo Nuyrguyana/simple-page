@@ -6,8 +6,7 @@
     line-height: 1.5;
     color: #121212;
 
-   background-color: #3b1010
-
+   background: #fff
 }
 
 
@@ -139,13 +138,120 @@
     font-family: arial, sans-serif;
 }
 
+.form-input:focus {
+    outline: none;
+    background-color: #4c89da;
+}
+
 .form-textarea {
     width: 200px;
     height: 150px;
     padding: 2px;
 
     border: 1px solid #000;
+    outline: 1px solid red;
 
     font-size: 15px;
     font-family: arial, sans-serif;
+}
+
+.link {
+    color: #063067;
+    text-decoration: none;
+}
+.link:visited {
+    color: #ff004e;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+
+.btn {
+    padding: 5px 10px;
+
+    background-color: #58bd58;
+    border: 1px solid #173f17;
+    color: white;
+
+
+}
+
+.btn:active {
+    background-color: #1654
+}
+.btn:disabled {
+    background-color: #444;
+    color: #808080;
+    cursor: not-allowed;
+    border: 1px solid #444;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #246424;
+    cursor: pointer;
+}
+
+.form-Fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #cecc;
+
+}
+.form-title {
+    margin: 0 0 15px;
+}
+
+/* Modal */
+
+.modal {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 5px;
+    position: relative;
+
+    background-color: #eee;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+
+    background-color: #333;
+
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 2;
+
+}
+
+.square.red {
+    background-color: red;
+    right: -15px;
+    top: -5px;
+    z-index: 1;
+}
+
+.square-fixed {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+
+    background-color: #fff100;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
 }
